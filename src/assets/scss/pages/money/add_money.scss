@@ -1,0 +1,59 @@
+@use "../../common/index" as m;
+
+#add_money {
+    // padding: 20px;
+    min-height: 100vh;
+
+    >.container {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+        padding: 20px;
+        padding-top: 70px;
+        width: 100%;
+
+        >.middle {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            >input.amount {
+                width: 80%;
+                border: none;
+                outline: none;
+                display: block;
+                margin-inline: auto;
+                text-align: center;
+                font-size: 2em;
+                padding: 0.7em;
+                border-radius: 20px;
+                background-color: m.$input-bg;
+                // border: 1px solid red;
+            }
+
+            >.radio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+
+                >.ra {
+                    background-color: m.$input-bg;
+                    padding: 1em 2em;
+                    border-radius: 10px;
+                    display: flex;
+                    gap: 0.5em;
+                    accent-color: m.$accent;
+                    @include m.press();
+
+                    input {
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

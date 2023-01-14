@@ -1,0 +1,89 @@
+@use "index" as m;
+
+.text-center {
+    text-align: center;
+}
+
+.small {
+    font-size: 0.7rem;
+}
+
+.lg {
+    /* Welcome to Money */
+    background: -webkit-linear-gradient(0deg, #D79CFF, #78CAF9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    // text-fill-color: transparent;
+}
+
+button.btn-full-width {
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: white;
+    padding: 1.4em;
+    font-size: 0.9em;
+    border-radius: m.$bdrs;
+    @include m.press(100, 98);
+    // font-weight: 500;
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+
+button.btn-full-width.white {
+    background-color: white;
+    color: black;
+}
+
+button.btn-full-width.gray {
+    background-color: #222;
+}
+
+.end-text {
+    font-size: 0.7em;
+    color: #888;
+}
+
+.btn100,
+
+.btn60 {
+    border: none;
+    outline: none;
+    min-width: 60%;
+    margin-inline: auto;
+    display: block;
+    padding: 1.4em;
+    border-radius: m.$bdrs;
+    color: white;
+    background-color: black;
+    font-size: 0.9em;
+    @include m.press(150, 97);
+    box-shadow: 5px 5px 15px 0px #00000044;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+    >img {
+        height: 1.1em;
+    }
+}
+
+.btn100 {
+    width: 100%;
+}
+
+
+
+
+// Width
+.w100{
+    width: 100%;
+}
+.w90{
+    width: 90%;
+    display: block;
+    margin-inline: auto ;
+}

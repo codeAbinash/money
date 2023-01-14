@@ -1,0 +1,50 @@
+@use "../common/classes";
+@use "../common/index" as m;
+#welcome {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 50px;
+    >.image{
+        img{
+            width: 90%;
+            display: block;
+            margin-inline: auto;
+            // outline: 1px solid rebeccapurple;
+            // aspect-ratio: 1 / 1;
+            // object-fit: cover;
+        }
+        img.coin{
+            width: 40%;
+            margin-bottom: 4em;
+        }
+    }
+    >.text{
+        // >*{
+        //     outline: 1px solid red;
+        // }
+        img.diamond{
+            width: 10em;
+        }
+        img.coin{
+            width: 6em;
+        }
+        .desc{
+            font-size: 0.9em;
+            color: #555;
+        }
+    }
+
+    >div {
+        width: 100%;
+        // outline: 1px solid red;
+    }
+    >.button{
+        @include m.flex();
+        gap: 0.7em;
+    }
+}

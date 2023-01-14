@@ -1,0 +1,47 @@
+@use "../common/index" as m;
+
+#titleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: m.$bg;
+    // backdrop-filter: blur(15px);
+    
+    // background-color: lightblue;
+    user-select: none;
+    >.left,
+    >.right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+
+        img {
+            width: 40px;
+            // background-color: lime;
+            padding: 10px;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            @include m.press(100, 90);
+
+            &:active {
+                background-color: #ddd;
+            }
+        }
+    }
+
+    >.center {
+        width: 70%;
+
+        p {
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+}

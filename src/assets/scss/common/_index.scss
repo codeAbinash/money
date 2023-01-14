@@ -1,0 +1,64 @@
+@use "sass:map";
+@use "sass:math";
+
+
+:root{
+    --input-bg : #f5f5f5;
+    --text : #333;
+    --accent :gold;
+    --bg : #fff;
+}
+// Colors
+$accent : var(--accent);
+$accent-text : mix(#23cd8d, #000, 90%);
+$bg : var(--bg);
+$text : var(--text);
+$gray : #7f7f7f;
+$input-bg : var(--input-bg);
+$selected-text : $text;
+
+
+// Hover effect and 
+$colors : ("accent" : $accent, "bg" : $bg, "text" : $text );
+
+@function color($color : "accent", $mix : 100%, $opacity : 100, $mix-color : white) {
+    @return mix(rgba(map.get($colors, $color), math.div($opacity , 100)), $mix-color, $mix)
+}
+
+
+
+@mixin press($dur : 200, $scale : 90) {
+    transition:all #{$dur}ms;
+
+    &:active {
+        scale: math.div($scale, 100);
+    }
+}
+
+
+
+// Layout
+@mixin flex($jc : center, $dir : column) {
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+@mixin userSelectNone() {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+
+
+
+// Variables
+$bdrs : 12px;
+
