@@ -1,0 +1,95 @@
+{
+    "short_name": "Money",
+    "name": "Money",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "Calculates Your Money",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/money/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/money/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/money/icon196.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/money/favicon.ico",
+            "sizes": "16x16 32x32 48x48 64x64 128x128 256x256",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/money/favicon.ico",
+            "type": "image/png",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/money/favicon.ico",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/money/favicon.ico",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/money/favicon.ico",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "JavaScript Objects",
+            "short_name": "Objects",
+            "description": "Detailed Description of JavaScript Objects",
+            "url": "./?file=index/dataTypes/Arrays",
+            "icons": [
+                {
+                    "src": "/money/favicon.ico",
+                    "sizes": "128x128"
+                }
+            ]
+        },
+        {
+            "name": "JavaScript Arrays",
+            "short_name": "Arrays",
+            "description": "Detailed Description of JavaScript Arrays",
+            "url": "./?file=index/dataTypes/Arrays",
+            "icons": [
+                {
+                    "src": "/money/favicon.ico",
+                    "sizes": "128x128"
+                }
+            ]
+        },
+        {
+            "name": "JavaScript Date",
+            "short_name": "Date",
+            "description": "Detailed Description of JavaScript Date",
+            "url": "./?file=index/dataTypes/Arrays",
+            "icons": [
+                {
+                    "src": "/money/favicon.ico",
+                    "sizes": "128x128"
+                }
+            ]
+        }
+    ]
+}
