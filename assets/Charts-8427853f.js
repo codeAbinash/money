@@ -1,1 +1,0 @@
-import{j as r,a}from"./index-b107ad7e.js";import{N as t}from"./NavigationBar-35c43795.js";import"./icons-a0fd2d01.js";function n(){return r("div",{id:"charts",children:[a("div",{className:"container",children:a("h1",{children:"Charts"})}),a(t,{active:"charts"})]})}export{n as default};
