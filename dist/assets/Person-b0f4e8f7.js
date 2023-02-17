@@ -1,0 +1,1 @@
+import{j as o,a as e}from"./index-083b6c8b.js";import{N as r}from"./NavigationBar-c3bfdd9c.js";import"./icons-b7914e73.js";function s(){return o("div",{id:"homepage",children:[e("div",{className:"container",children:e("h1",{children:"Person"})}),e(r,{active:"person"})]})}export{s as default};

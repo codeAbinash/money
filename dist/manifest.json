@@ -17,7 +17,7 @@
             "src": "icons/icon512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "icons/icon196.png",
@@ -28,7 +28,7 @@
         {
             "src": "icons/favicon.ico", 
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any"
         }
     ],
     "screenshots": [
